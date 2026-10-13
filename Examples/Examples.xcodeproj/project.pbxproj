@@ -119,7 +119,8 @@
 		2CE469162BA31C200075A32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE469152BA31C200075A32B /* Assets.xcassets */; };
 		2CF6047E2F4F1450002256C9 /* SessionControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF6047D2F4F1450002256C9 /* SessionControlsView.swift */; };
 		753A5EB92D412F3F0065FBAE /* NavigationMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A5EB82D412F3F0065FBAE /* NavigationMapView+Extensions.swift */; };
-		C95242602F9F9B53001EBCC0 /* MapboxNavigationCppRoadCameras in Frameworks */ = {isa = PBXBuildFile; productRef = C952425F2F9F9B53001EBCC0 /* MapboxNavigationCppRoadCameras */; };
+		95F089323075DA840009B98E /* SSMLRewritingSpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F089313075DA700009B98E /* SSMLRewritingSpeechSynthesizer.swift */; };
+		95F08934307603500009B98E /* JeitaSSML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F089333076034A0009B98E /* JeitaSSML.swift */; };
 		DF3D8C302C04B4E300BB715C /* History-Replaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3D8C2F2C04B4E300BB715C /* History-Replaying.swift */; };
 		DF592B6B2C19EA2C0047835E /* history_replay.gz in Resources */ = {isa = PBXBuildFile; fileRef = DF592B6A2C19EA2C0047835E /* history_replay.gz */; };
 		F60DFC812E28EEBA00C37E6E /* CustomRouteCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60DFC7E2E28EEBA00C37E6E /* CustomRouteCalloutView.swift */; };
@@ -272,6 +273,8 @@
 		2CF6047D2F4F1450002256C9 /* SessionControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionControlsView.swift; sourceTree = "<group>"; };
 		753A5EB82D412F3F0065FBAE /* NavigationMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationMapView+Extensions.swift"; sourceTree = "<group>"; };
 		C7D6584569C64D9CA147CA3D /* Road-Cameras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Road-Cameras.swift"; sourceTree = "<group>"; };
+		95F089313075DA700009B98E /* SSMLRewritingSpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSMLRewritingSpeechSynthesizer.swift; sourceTree = "<group>"; };
+		95F089333076034A0009B98E /* JeitaSSML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeitaSSML.swift; sourceTree = "<group>"; };
 		DF3D8C2F2C04B4E300BB715C /* History-Replaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History-Replaying.swift"; sourceTree = "<group>"; };
 		DF592B6A2C19EA2C0047835E /* history_replay.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = history_replay.gz; sourceTree = "<group>"; };
 		DF92974F2BBD4A910047329A /* mapbox-navigation-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "mapbox-navigation-ios"; path = ..; sourceTree = "<group>"; };
@@ -381,6 +384,8 @@
 		2CA319FF2BC9878A0071176E /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				95F089333076034A0009B98E /* JeitaSSML.swift */,
+				95F089313075DA700009B98E /* SSMLRewritingSpeechSynthesizer.swift */,
 				2C27B0F82C9DD359005B1484 /* RoadObjects */,
 				2CA31A022BC9878A0071176E /* Advanced.swift */,
 				2CA31A062BC9878A0071176E /* Basic.swift */,
@@ -927,9 +932,11 @@
 				2CA31A212BC9878A0071176E /* CustomBottomBannerView.swift in Sources */,
 				2CD9A5D22DD7481D00069654 /* MultiWaypoint.swift in Sources */,
 				2CA31A172BC9878A0071176E /* History-Recording.swift in Sources */,
+				95F089323075DA840009B98E /* SSMLRewritingSpeechSynthesizer.swift in Sources */,
 				2C27B0FA2C9DD386005B1484 /* RoadObjectKind.swift in Sources */,
 				2C305FB32C385111000710D7 /* Upcoming-Intersection.swift in Sources */,
 				2C5D23DF2BF7B3FF00194158 /* Custom-Waypoints.swift in Sources */,
+				95F08934307603500009B98E /* JeitaSSML.swift in Sources */,
 				2C5D23E02BF7B3FF00194158 /* Route-Lines-Styling.swift in Sources */,
 				2CA31A1E2BC9878A0071176E /* Beta-Query-Parameters.swift in Sources */,
 				2C27B0F72C9DC20D005B1484 /* Custom-Road-Objects.swift in Sources */,

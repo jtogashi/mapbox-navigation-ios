@@ -25,13 +25,14 @@ final class CustomVoiceControllerUI: UIViewController {
         )
         let provider = MapboxNavigationProvider(coreConfig: coreConfig)
         coreConfig.ttsConfig = .custom(
-            speechSynthesizer:
-            // `MultiplexedSpeechSynthesizer` will provide "a backup" functionality to cover cases, which
-            // our custom implementation cannot handle.
-            MultiplexedSpeechSynthesizer(
-                mapboxSpeechApiConfiguration: coreConfig.credentials.speech,
-                skuTokenProvider: provider.skuTokenProvider.skuToken,
-                customSpeechSynthesizers: [CustomVoiceController()]
+            speechSynthesizer: SSMLRewritingSpeechSynthesizer(
+                base: MultiplexedSpeechSynthesizer(
+                    mapboxSpeechApiConfiguration: coreConfig.credentials.speech,
+                    skuTokenProvider: provider.skuTokenProvider.skuToken
+                ),
+                rewrite: { jeita in
+                    JeitaSSML(ssml: jeita).polly
+                }
             )
         )
         provider.apply(coreConfig: coreConfig)
